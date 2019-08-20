@@ -1,0 +1,28 @@
+.userChoice {
+  display: flex;
+  flex-direction: column;
+  background: #faebd7;
+  height: 200px;
+  border-radius: 16px;
+  width: 29%;
+  position: relative;
+}
+.rockpaperscissorsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0;
+}
+.userText {
+  position: absolute;
+  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000b5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.userText:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}

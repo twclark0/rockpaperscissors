@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import css from './App.module.css'
+import { Scoreboard } from './Scoreboard'
+import { RockPaperScissors } from './RockPaperScissors'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className={css.app}>
+      <div className={css.header}>
+        <a className={css.title} href="">
+          Rock<span role="img">✊</span> Paper<span role="img">✋</span>{' '}
+          Scissors<span role="img">✌</span>
         </a>
-      </header>
+        <Scoreboard computerScore={0} userScore={0} />
+        <RockPaperScissors />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
