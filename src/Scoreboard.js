@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import css from './Scoreboard.module.css'
-import { determineMood } from './Utils.js'
+import { determineMood } from './utils.js'
 
 export const Scoreboard = ({ computerScore, userScore }) => {
   const [{ userColor, computerColor }, updateColors] = useState({
